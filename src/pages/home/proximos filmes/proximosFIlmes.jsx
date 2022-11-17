@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-export default function Filmes() {
+
+export default function ProximosFIlmes() {
   const [movies, setMovies] = useState([]);
   let image = "https://image.tmdb.org/t/p/w500";
   useEffect(() => {
@@ -15,13 +16,19 @@ export default function Filmes() {
     )
       .then((resposta) => resposta.json())
       .then((dados) => {
-        console.log(dados.results);
+        /*const {id, poster_path} = dados.results[0]
+        const movies = {
+          id,
+          poster_path
+        }*/
+        //console.log(movies.id)
+       // console.log(dados.results);
         setMovies(dados.results);
       });
   }, []);
   return (
     <div>
-      <h1>Filmes mais assistido nesse mês</h1>
+      <h1>Proximos filmes</h1>
       <ul>
         {movies.map((movies, index) => (
           <ul key={movies.id}>

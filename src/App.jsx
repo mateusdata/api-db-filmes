@@ -2,11 +2,15 @@
 import './App.css';
 import Rotas from './pages/routes';
 import React from 'react';
+import Cabecalho from './components/header/cabecalho';
+import Rodape from './components/footer/rodape';
 
 function App() {
   return (
-     <div>
+     <div className='App'>
+      <Cabecalho/>
       <Rotas/>
+      <Rodape/>
      </div> 
   );
 }

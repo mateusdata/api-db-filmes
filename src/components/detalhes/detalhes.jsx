@@ -21,7 +21,7 @@ const Detalhes = () => {
           imagem: `${image}${poster_path}`,
           lancamento: release_date,
         };
-        console.log(movie);
+        console.log(dados.overview);
         setMovies(movie);
       });
   }, [id, image]);
@@ -32,7 +32,7 @@ const Detalhes = () => {
       <img className="img" src={movie.imagem} alt={movie.titulo} />
         <div className="detalhes">
           <h1>{movie.titulo}</h1>
-          <span>Sinopse: {movie.sinopse}</span>  <br />
+          {movie.overview ==='' ? <span> { "Sinopse:" + movie.sinopse}</span> : false }
           <span className="lancamento">Data de lançamento: {movie.lancamento}</span>
          <Link to="/"> <button >Voltar</button></Link>
          

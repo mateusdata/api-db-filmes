@@ -1,10 +1,20 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  max-width: 100%;
+}
+html{
+  margin: 0px;
+  max-width: 100%;
+  
 }
 body{
   background-color: black;
   color: white;
-  padding: 2rem;
+
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }

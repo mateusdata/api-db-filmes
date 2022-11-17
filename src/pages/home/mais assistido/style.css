@@ -1,7 +1,10 @@
 
+.mais-assistido {
+    padding: 2rem;
+}
 h1{
     text-align: center;
-    margin-bottom: 4rem  ;
+    margin-bottom: 2rem !important  ;
 }
 ul{
    list-style: none;
@@ -123,6 +126,11 @@ a:hover{
         font-weight: bold;
         font-size: 80%;
     }
+    h1 {
+        margin: 2rem 0;
+        font-size:2rem;
+    }
+    
 }
 
 
