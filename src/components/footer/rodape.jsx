@@ -3,7 +3,7 @@ import "./styles.css"
 const Rodape = () => {
     return (
         <div>
-            <p>@mateusdat - Aplicação feira com react.js a</p>
+            <p>Implementado com React Js </p>
         </div>
     );
 }

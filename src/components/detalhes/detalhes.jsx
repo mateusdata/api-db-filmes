@@ -35,6 +35,9 @@ const Detalhes = () => {
           {movie.overview ==='' ? <span> { "Sinopse:" + movie.sinopse}</span> : false }
           <span className="lancamento">Data de lançamento: {movie.lancamento}</span>
          <Link to="/"> <button >Voltar</button></Link>
+         <Link to="/"> <button >Voltar</button></Link>
+         <Link to="/proximos"></Link>
+          <Link to="/" > Mais assistido</Link>
          
         </div>
     </div>

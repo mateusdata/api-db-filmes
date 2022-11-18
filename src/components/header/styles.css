@@ -1,13 +1,14 @@
 .cabecalho {
     min-width: 90%;
     height: 1.5vh;
-    background-color: rgb(27, 24, 24) !important;
+    background-color: #00A884 !important;
     color: rgb(221, 221, 221) !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2rem;
-    gap: 20rem;
+    gap: calc(60%);
+    
 
 }
 
@@ -23,15 +24,18 @@
 
 .link-a {
     text-decoration: none;
-    background-color: rgb(120, 9, 224);
+    background-color: rgb(154, 58, 245);
     padding: 10px;
     border-radius: 8px;
-    color: white;
+    color: rgb(233, 224, 224);
+}
+.link-a:hover {
+    background-color:rgb(145, 45, 45);
 }
 
 @media only screen and (max-width:432px) {
     .cabecalho {
-        min-width: 90%;
+        min-width: 84%;
         height: 1vh;
         background-color: rgb(27, 24, 24) !important;
         color: rgb(221, 221, 221) !important;
@@ -39,7 +43,13 @@
         align-items: center;
         justify-content: flex-start;
         padding: 2rem;
-        gap: 2px;
+        gap: 0.5rem;
+        
 
     }
+    .h {
+        font-size: calc(1.3rem);
+        margin-left: -1rem;
+    }
+    
 }

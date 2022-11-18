@@ -1,0 +1,9 @@
+.load {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 100vh;
+    background-color: black;
+}
