@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 //<a className='link-a' href="/proximos">Proximos filmes</a>
 //<a className='link-a'  href="/">Mais assistido</a>
 export default function Cabecalhos() {
+    
   return (
     <section className="cabecalho">
       <h1 className="h">Sugestão de filmes</h1>
