@@ -1,12 +1,15 @@
 
 .mais-assistido {
-    padding: 2rem;
+    padding: 1.8rem;
     background-color: black;
 }
-h1{
+#filmesMesAssistidos{
     text-align: center;
     margin-bottom: 2rem !important  ;
+    margin-top: 4rem;
+    font-size: 2rem;
 }
+
 ul{
    list-style: none;
    display: grid;
@@ -55,6 +58,28 @@ a:hover{
 }
 
 
+@media only screen and (max-width:1604px){
+    ul{
+        list-style: none;
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) !important;
+        column-gap: 1rem;
+        row-gap: 2rem;
+     }
+     img{
+        width: 120px;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    span{
+        font-weight: bold;
+        font-size: 105%;
+    }
+}
+
+
+
 @media only screen and (max-width:670px){
     ul{
         list-style: none;
@@ -95,7 +120,7 @@ a:hover{
     ul{
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
         column-gap: 1rem;
         row-gap: 2rem;
      }
@@ -113,7 +138,7 @@ a:hover{
     ul{
         list-style: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)) !important;
         column-gap: 1rem;
         row-gap: 2rem;
         /*border: solid red 2px;*/
@@ -127,11 +152,6 @@ a:hover{
         font-weight: bold;
         font-size: 80%;
     }
-    h1 {
-        margin: 2rem 0;
-        font-size:2rem;
-    }
-    
 }
 
 

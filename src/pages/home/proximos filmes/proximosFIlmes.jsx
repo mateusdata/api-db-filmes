@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Preload from "../../../components/preeload/preload";
+import Topo from "../../../components/topo/topo";
 
 export default function ProximosFIlmes() {
   const [movies, setMovies] = useState([]);
@@ -31,8 +32,10 @@ export default function ProximosFIlmes() {
     }, 650);
   }, []);
   return (
-    <div>
-      <h1>Próximos filmes</h1>
+
+    <Topo>
+      <div  className="mais-assistido">
+      <h1 id="filmesMes">Próximos filmes</h1>
       {load ? <Preload /> : false}
       <ul>
         {movies.map((movies, index) => (
@@ -47,5 +50,7 @@ export default function ProximosFIlmes() {
         ))}
       </ul>
     </div>
+    </Topo>
+    
   );
 }

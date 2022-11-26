@@ -1,5 +1,5 @@
 .cabecalho {
-    min-width: 90%;
+    min-width: 100%;
     height: 1.5vh;
     background-color: #00A884 !important;
     color: rgb(221, 221, 221) !important;
@@ -8,8 +8,7 @@
     justify-content: flex-start;
     padding: 2rem;
     gap: calc(60%);
-    
-
+    position: fixed;
 }
 
 .h {
@@ -33,6 +32,38 @@
     background-color:rgb(145, 45, 45);
 }
 
+@media only screen and (max-width: 1285px) {
+    .cabecalho {
+        gap: 40%; 
+    }
+}
+@media only screen and (max-width: 841px) {
+    .cabecalho {
+        gap: 20%; 
+    }
+}
+@media only screen and (max-width: 620px) {
+    .cabecalho {
+        gap: 10%; 
+    }
+}
+@media only screen and (max-width: 560px) {
+    .cabecalho {
+        gap: 5%; 
+    }
+}
+@media only screen and (max-width: 517px) {
+    .cabecalho {
+        gap: 0%; 
+    }
+    .link {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.1rem;
+    }
+    
+}
+
 @media only screen and (max-width:432px) {
     .cabecalho {
         min-width: 84%;
@@ -51,5 +82,11 @@
         font-size: calc(1.3rem);
         margin-left: -1rem;
     }
+    .link {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
     
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Link, useParams } from "react-router-dom";
+import Topo from "../topo/topo";
 const Detalhes = () => {
   const { id } = useParams();
   const [movie, setMovies] = useState({});
@@ -28,15 +29,26 @@ const Detalhes = () => {
 
   console.log(id);
   return (
-    <div className="movie">
-      <img className="img" src={movie.imagem} alt={movie.titulo} />
+    <Topo>
+      <div className="movie">
+        <img className="img" src={movie.imagem} alt={movie.titulo} />
         <div className="detalhes">
           <h1>{movie.titulo}</h1>
-          {movie.overview ==='' ? <span> { "Sinopse:" + movie.sinopse}</span> : false }
-          <span className="lancamento">Data de lançamento: {movie.lancamento}</span>
-         <Link to="/"> <button >Voltar</button></Link>
+          {movie.overview === "" ? (
+            <span> {"Sinopse:" + movie.sinopse}</span>
+          ) : (
+            false
+          )}
+          <span className="lancamento">
+            Data de lançamento: {movie.lancamento}
+          </span>
+          <Link to="/">
+            {" "}
+            <button>Voltar</button>
+          </Link>
         </div>
-    </div>
+      </div>
+    </Topo>
   );
 };
 
