@@ -10,12 +10,11 @@ export default function ProximosFIlmes() {
   let image = "https://image.tmdb.org/t/p/w500";
   useEffect(() => {
     setTimeout(() => {
-      fetch(
+    
+    fetch(
         "https://api.themoviedb.org/3/movie/upcoming?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1&language=en-US&page=1"
-      );
 
-      fetch(
-        "https://api.themoviedb.org/3/movie/popular?api_key=e586fac5b577e44076f604a3d0ca6a22&language=pt-BR&page=1"
+         
       )
         .then((resposta) => resposta.json())
         .then((dados) => {
@@ -35,7 +34,7 @@ export default function ProximosFIlmes() {
 
     <Topo>
       <div  className="mais-assistido">
-      <h1 id="filmesMes">Próximos filmes</h1>
+      <h1 id="filmesMes">Em breve nos cinemas</h1>
       {load ? <Preload /> : false}
       <ul>
         {movies.map((movies, index) => (
