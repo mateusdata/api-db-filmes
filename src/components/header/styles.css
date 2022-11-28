@@ -39,14 +39,14 @@
 
 .link-a {
     text-decoration: none;
-    background-color: rgb(154, 58, 245);
+    background-color:   rgb(109, 10, 201);
     padding: 10px;
     border-radius: 8px;
     color: rgb(233, 224, 224);
 }
 
 .link-a:hover {
-    background-color:  rgb(109, 10, 201);
+    background-color:  rgb(125, 26, 218);
 }
 
 @media only screen and (max-width: 1285px) {

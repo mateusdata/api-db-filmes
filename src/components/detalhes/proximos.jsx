@@ -40,7 +40,7 @@ const Proximos = () => {
             Data de lançamento: {movie.lancamento}
           </span>
           <span className="sinop">Sinopse: {movie.sinopse}</span>
-          <Link to="/">
+          <Link to="/proximos">
             {" "}
             <button>Voltar</button>
           </Link>

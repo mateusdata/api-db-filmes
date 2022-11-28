@@ -24,7 +24,7 @@ export default function Rotas() {
           <Route path="*" element={<p style={{ color: "red",height:"60vh", marginTop:"10vh" }}>Essa pagina não existe erro 404</p>} />
           <Route path="/proximos" element={<ProximosFIlmes />} />
           <Route path="/melhor-classificacao" element={<MelhorClassificacao/>}/>
-          <Route path="natv" element={<NaTv/>}/>
+          <Route path="/natv" element={<NaTv/>}/>
         </Routes>
       </BrowserRouter>
     </>

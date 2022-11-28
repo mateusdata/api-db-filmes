@@ -39,7 +39,7 @@ const DetalhesClassificacao = () => {
             Data de lançamento: {movie.lancamento}
           </span>
           <span className="sinop">Sinopse: {movie.sinopse}</span>
-          <Link to="/">
+          <Link to="/melhor-classificacao">
             {" "}
             <button>Voltar</button>
           </Link>
