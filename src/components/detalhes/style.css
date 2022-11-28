@@ -61,3 +61,7 @@ span{
   opacity: 0.5;
 
 }
+.sinop {
+    max-width: 60%;
+    min-width: 50%;
+}

@@ -1,19 +1,15 @@
-import React from 'react';
-import Rodape from '../footer/rodape';
-import Cabecalhos from '../header/cabecalho';
+import React from "react";
+
+import Cabecalhos from "../header/cabecalho";
 
 const Topo = (props) => {
-    return (
-        <div>
-         <Cabecalhos/>   
+  return (
+    <div>
+      <Cabecalhos />
 
-        <div>
-        {props.children}
-
-        </div>
-        <Rodape/>
-        </div>
-    );
-}
+      <div>{props.children}</div>
+    </div>
+  );
+};
 
 export default Topo;

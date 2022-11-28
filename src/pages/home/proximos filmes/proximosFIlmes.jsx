@@ -12,7 +12,7 @@ export default function ProximosFIlmes() {
     setTimeout(() => {
     
     fetch(
-        "https://api.themoviedb.org/3/movie/upcoming?api_key=e586fac5b577e44076f604a3d0ca6a22&language=pt-BR&page=1&language=pt-BR&page=1"
+        "https://api.themoviedb.org/3/movie/upcoming?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1"
 
          
       )
@@ -28,7 +28,7 @@ export default function ProximosFIlmes() {
           setMovies(dados.results);
           setLoad(false);
         });
-    }, 650);
+    }, 350);
   }, []);
   return (
 

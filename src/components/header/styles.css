@@ -1,14 +1,30 @@
 .cabecalho {
     min-width: 100%;
     height: 1.5vh;
-    background-color: #00A884 !important;
-    color: rgb(221, 221, 221) !important;
+    background-color: #00A884 ;
+    color: rgb(221, 221, 221) ;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2rem;
-    gap: calc(60%);
+    gap: 1.2rem !important;
+    position: fixed  ;
+    z-index: 1;
+}
+.menua {
+    width: 70%;
+    height: 200vh;
     position: fixed;
+    min-width: 70%;
+    max-width: 70%;
+    background-color: #00A884;
+    margin: 325px 0px 0px -60px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
 }
 
 .sugestao {
@@ -35,32 +51,36 @@
 
 @media only screen and (max-width: 1285px) {
     .cabecalho {
-        gap: 40%;
+       gap:0.2rem ;;
     }
 }
 
 @media only screen and (max-width: 841px) {
     .cabecalho {
-        gap: 20%;
+       gap:0.2rem ;;
+    }
+    h1{
+        display: none;
     }
 }
 
 @media only screen and (max-width: 620px) {
     .cabecalho {
-        gap: 10%;
+       gap:0.2rem ;;
     }
 }
 
 @media only screen and (max-width: 560px) {
     .cabecalho {
-        gap: 5%;
+       gap:0.2rem ;
     }
 }
 
 @media only screen and (max-width: 517px) {
     .cabecalho {
-        gap: 0%;
+       gap:0.2rem ;
     }
+   
 
     .link {
         display: flex;
@@ -74,13 +94,13 @@
     .cabecalho {
         min-width: 84%;
         height: 1vh;
-        background-color: #00A884 !important;
-        color: rgb(221, 221, 221) !important;
+        background-color: #00A884 ;
+        color: rgb(221, 221, 221) ;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding: 2rem;
-        gap: 0.5rem;
+          gap:0.2rem ;
 
 
     }
@@ -96,6 +116,7 @@
         height: 4vh;
         border-radius: 8px;
         margin-left: 20px;
+        size: 1px;
     }
 
     .sugestao {
@@ -111,8 +132,8 @@
     .cabecalho {
         min-width: 84%;
         height: 1vh;
-        background-color: #00A884 !important;
-        color: rgb(221, 221, 221) !important;
+        background-color: #00A884 ;
+        color: rgb(221, 221, 221) ;
         display: flex;
         align-items: center;
         justify-content: flex-start;
