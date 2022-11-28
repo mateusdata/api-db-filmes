@@ -35,7 +35,7 @@ export default function MaisAssistido() {
           {movies.map((movies, index) => (
             <ul key={movies.id}>
               <li>
-                <Link to={`/detalhes/${movies.id}`}>
+                <Link to={`/maisassistido/detalhes/id/${movies.id}`}>
                   <img src={`${image}${movies.poster_path}`} alt="foto" />
                 </Link>
 

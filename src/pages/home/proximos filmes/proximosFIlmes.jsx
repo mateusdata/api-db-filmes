@@ -40,7 +40,7 @@ export default function ProximosFIlmes() {
         {movies.map((movies, index) => (
           <ul key={movies.id}>
             <li>
-              <Link to={`/detalhes/${movies.id}`}>
+              <Link to={`/proximos/detalhes/id/${movies.id}`}>
                 <img src={`${image}${movies.poster_path}`} alt="sss" />
               </Link>
               <span>{movies.title}</span>

@@ -26,7 +26,7 @@ const NaTv = () => {
             {movies.map((movies, index) => (
               <ul key={movies.id}>
                 <li>
-                  <Link to={`/detalhesss/${movies.id}`}>
+                  <Link to={`/natv/detalhes/id/${movies.id}`}>
                     <img src={`${image}${movies.poster_path}`} alt="sss" />
                   </Link>adssdadsa
                   <span>{movies.name}</span>

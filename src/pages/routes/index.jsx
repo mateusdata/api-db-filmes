@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Detalhes from "../../components/detalhes/detalhes";
 import DetalhesClassificacao from "../../components/detalhes/detalhesClassificacao";
 import DetalhesTv from "../../components/detalhes/detalhesTv";
+import Proximos from "../../components/detalhes/proximos";
 import NaTv from "../home/conteudo tv/naTv";
 import MaisAssistido from "../home/mais assistido/maisAssistido";
 import MelhorClassificacao from "../home/melhor classificação/melhorClassificacao";
@@ -14,9 +15,11 @@ export default function Rotas() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MaisAssistido />} />
-          <Route path="/detalhes/:id" element={<Detalhes />} />
-          <Route path="detalhess/:id" element={<DetalhesClassificacao />} />
-          <Route path="/detalhesss/:id" element={<DetalhesTv />} />
+          <Route path="/maisassistido/detalhes/id/:id" element={<Detalhes />} />
+          <Route path="/proximos/detalhes/id/:id" element={<Proximos />} />
+          <Route path="/classificacao/detalhes/id/:id" element={<DetalhesClassificacao />} />
+          <Route path="/natv/detalhes/id/:id" element={<DetalhesTv />} />
+         
           
           <Route path="*" element={<p style={{ color: "red",height:"60vh", marginTop:"10vh" }}>Essa pagina não existe erro 404</p>} />
           <Route path="/proximos" element={<ProximosFIlmes />} />

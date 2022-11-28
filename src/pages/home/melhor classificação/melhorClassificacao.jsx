@@ -27,7 +27,7 @@ const MelhorClassificacao = () => {
             {movies.map((movies, index) => (
               <ul key={movies.id}>
                 <li>
-                  <Link to={`/detalhess/${movies.id}`}>
+                  <Link to={`/classificacao/detalhes/id/${movies.id}`}>
                     <img src={`${image}${movies.poster_path}`} alt="sss" />
                   </Link>
                   <span>{movies.name}</span>
