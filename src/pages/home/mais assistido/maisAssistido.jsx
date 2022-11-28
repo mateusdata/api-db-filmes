@@ -20,11 +20,11 @@ export default function MaisAssistido() {
       )
         .then((resposta) => resposta.json())
         .then((dados) => {
-          console.log(dados.results);
+         // console.log(dados.results);
           setMovies(dados.results);
           setLoad(false);
         });
-    }, 350);
+    }, 300);
   }, []);
   return (
     <Topo>

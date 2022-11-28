@@ -23,12 +23,12 @@ const DetalhesClassificacao = () => {
           imagem: `${image}${poster_path}`,
           lancamento: last_air_date,
         };
-        console.log(dados);
+        //console.log(dados);
         setMovies(movie);
       });
   }, [id, image]);
 
-  console.log(id);
+  //console.log(id);
   return (
     <Topo>
       <div className="movie">

@@ -11,7 +11,7 @@ const NaTv = () => {
     )
       .then((resposta) => resposta.json())
       .then((data) => {
-        console.log(data.results);
+        //console.log(data.results);
         setMovies(data.results)
       });
   }, []);

@@ -12,7 +12,7 @@ const MelhorClassificacao = () => {
       .then((resposta) => resposta.json())
       .then((data) => {
         setMovies(data.results)
-        console.log(data.results);
+       // console.log(data.results);
       });
      
   }, []);

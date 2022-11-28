@@ -1,13 +1,13 @@
 .cabecalho {
     min-width: 100%;
     height: 1.5vh;
-    background-color: #00A884 ;
+    background-color: #032541 ;
     color: rgb(221, 221, 221) ;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 2rem;
-    gap: 1.2rem !important;
+    gap: 1.2rem ;
     position: fixed  ;
     z-index: 1;
 }
@@ -17,7 +17,7 @@
     position: fixed;
     min-width: 70%;
     max-width: 70%;
-    background-color: #00A884;
+    background-color: #032541;
     margin: 325px 0px 0px -60px ;
     display: flex;
     flex-direction: column;
@@ -39,107 +39,29 @@
 
 .link-a {
     text-decoration: none;
-    background-color:   rgb(109, 10, 201);
+    background-color:  #169db4;
     padding: 10px;
     border-radius: 8px;
-    color: rgb(233, 224, 224);
+    color: rgb(0, 0, 0);
 }
 
 .link-a:hover {
-    background-color:  rgb(125, 26, 218);
+    background-color:  #39cee9;
 }
 
-@media only screen and (max-width: 1285px) {
-    .cabecalho {
-       gap:0.2rem ;;
-    }
-}
 
-@media only screen and (max-width: 841px) {
-    .cabecalho {
-       gap:0.2rem ;;
-    }
-    h1{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 620px) {
-    .cabecalho {
-       gap:0.2rem ;;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .cabecalho {
-       gap:0.2rem ;
-    }
-}
-
-@media only screen and (max-width: 517px) {
-    .cabecalho {
-       gap:0.2rem ;
-    }
-   
-
-    .link {
-        display: flex;
-        justify-content: flex-start;
-        gap: 0.1rem;
-    }
-
-}
-
-@media only screen and (max-width:432px) {
+@media only screen and (max-width:400px) {
     .cabecalho {
         min-width: 84%;
         height: 1vh;
-        background-color: #00A884 ;
-        color: rgb(221, 221, 221) ;
+        padding: 2rem;
+        gap: 0rem;
+        font-size: 10px;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        padding: 2rem;
-          gap:0.2rem ;
-
-
-    }
-
-    .link {
-        display: flex;
-        justify-content: flex-start;
-        gap: 0.5em;
-    }
-
-    .link-a {
-        width: 100%;
-        height: 4vh;
-        border-radius: 8px;
-        margin-left: 20px;
-        size: 1px;
-    }
-
-    .sugestao {
-        font-size: calc(1.2rem);
-        margin-left: -1rem;
-
-    }
-
-
-}
-
-@media only screen and (max-width:379px) {
-    .cabecalho {
-        min-width: 84%;
-        height: 1vh;
-        background-color: #00A884 ;
-        color: rgb(221, 221, 221) ;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 2rem;
-        gap: 0.5rem;
-
+        justify-content: center;
+        font-size: 0.8rem;
+        padding: 30px 30px 30px 10px;
 
     }
 
@@ -151,16 +73,62 @@
 
     .link-a {
         width: 90%;
+        min-width: 20%;
         height: 3vh;
         border-radius: 8px;
         margin-left: 10px;
-        padding-bottom: 17px;
+        padding-bottom: 15px;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-top: 10px;
     }
 
     .sugestao {
         font-size: calc(1rem);
         margin-left: -1rem;
-
+        display: none;
     }
 
-}
+    }
+  
+    @media only screen and (max-width:337px) {
+        .cabecalho {
+            min-width: 84%;
+            height: 1vh;
+            padding: 2rem;
+            gap: 0rem;
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            padding: 30px 30px 30px 10px;
+    
+        }
+    
+        .link {
+            display: flex;
+            justify-content: flex-start;
+            gap: 0.5em;
+        }
+    
+        .link-a {
+            width: 90%;
+            min-width: 20%;
+            height: 3vh;
+            border-radius: 8px;
+            margin-left: 7px;
+            padding-bottom: 15px;
+            padding-left: 7.8px;
+            padding-right: 7.8px;
+            padding-top: 7px;
+        }
+    
+        .sugestao {
+            font-size: calc(1rem);
+            margin-left: -1rem;
+            display: none;
+        }
+    
+        }
+      
