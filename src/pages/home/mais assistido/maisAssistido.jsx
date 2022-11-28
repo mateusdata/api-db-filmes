@@ -15,7 +15,7 @@ export default function MaisAssistido() {
       // "https://api.themoviedb.org/3/movie/upcoming?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1&language=en-US&page=1"
 
       fetch(
-        "https://api.themoviedb.org/3/movie/popular?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1"
+        "https://api.themoviedb.org/3/movie/popular?api_key=e586fac5b577e44076f604a3d0ca6a22&language=pt-BR&page=1"
         //e586fac5b577e44076f604a3d0ca6a22
       )
         .then((resposta) => resposta.json())

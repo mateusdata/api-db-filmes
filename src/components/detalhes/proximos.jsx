@@ -11,7 +11,7 @@ const Proximos = () => {
       //"https://api.themoviedb.org/3/movie/popular?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1"
       //`https://api.themoviedb.org/3/movie/${id}?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1&language=pt-BR`
       //`https://api.themoviedb.org/3/movie/${id}?api_key=e586fac5b577e44076f604a3d0ca6a22&language=pt-BR&page=1`
-      `https://api.themoviedb.org/3/movie/${id}?api_key=e586fac5b577e44076f604a3d0ca6a22&language=en-US&page=1"`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=e586fac5b577e44076f604a3d0ca6a22&language=pt-BR&page=1"`
     )
       .then((resposta) => resposta.json())
       .then((dados) => {

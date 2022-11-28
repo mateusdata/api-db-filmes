@@ -28,7 +28,7 @@ const NaTv = () => {
                 <li>
                   <Link to={`/natv/detalhes/id/${movies.id}`}>
                     <img src={`${image}${movies.poster_path}`} alt="sss" />
-                  </Link>adssdadsa
+                  </Link>
                   <span>{movies.name}</span>
                 </li>
               </ul>
