@@ -13,6 +13,6 @@ Melhor Classificação: lista de filmes com as melhores avaliações;
 Passando na TV: lista de filmes que estão passando na televisão.
 Cada opção de navegação tem um ícone representativo para ajudar a identificá-la.
 
-Ao clicar em um filme específico, você será redirecionado para uma página com informações mais detalhadas, incluindo título, sinopse, data de lançamento e elenco.
+# Ao clicar em um filme específico, você será redirecionado para uma página com informações mais detalhadas, incluindo título, sinopse, data de lançamento e elenco.
 
-Você também pode usar o recurso de pesquisa para procurar filmes específicos por título, ator ou gênero.
+
